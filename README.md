@@ -4,7 +4,7 @@
 The main feature of pure architecture is that the outer layers do not refer to the inner ones.
 
 ### Domain
-The main feature of DDD is that the definition of essence and __model__ changes in comparison with pure architecture. 
+The main feature of DDD is that the definition of __entity__ and __model__ changes in comparison with pure architecture. 
 Namely, in DDD, in the ***domain*** layer of the __model__, they represent a set of parameters and
 RULES that completely describe the subject area (also, the application of these rules as a check of correspondence based on a closed constructor),
 so in the usual architecture on this layer there are __entities__ with a set of only parameters. This is perhaps the only difference.

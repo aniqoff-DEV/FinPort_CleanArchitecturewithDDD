@@ -28,3 +28,8 @@ then there is no point in using a mediator, if the project is larger and you nee
 update and delete, and more specific types of creating 7 users who will not have a middle name in their full name and who are at least 18 years old,
 then yes. Another thing that needs to be said about CQRS is that its principle of dividing into commands/requests and handlers and using them in the mediator pattern,
 like: you have these parameters and execute this specific command. ```Send(<SomeCommandOrQuery>(some parameters)```
+
+### Summary
+In conclusion about the architecture, I can say that while I was doing this example I came across the idea that this thing is very helpful in writing structured code and, most importantly, code that works entirely according to the SOLID principles. But, during the development process, you need to understand that there are also patterns like CYURS, this is not yet talking about the Unit of Work, because I haven’t used it, that you need to use them in context and start from the problems that they solve, because they may be useless for you, which will create unnecessary code overhead, and that the question will come up: Isn’t it better to get by with ordinary services?
+
+_That's all, I was with you and I really hope that this repository and the annotation to it helped you. Best coding to you!_

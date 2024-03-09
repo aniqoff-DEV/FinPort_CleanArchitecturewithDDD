@@ -20,6 +20,7 @@ which provides complete security in that these rules will be saved. Here you can
 ### Presentation
 At the ***presentation*** level, there is a very familiar pattern from MV* that acts as a __view__; 
 in the example here there are only implementations of controllers that can be used by the Server API.
+Otherwise, this layer is nothing more than a representation and for the most part it is not always needed.
 
 ### CQRS
 Regarding the CQRS - in other words, the mediator pattern, which in this project is implemented using the MediotR library.

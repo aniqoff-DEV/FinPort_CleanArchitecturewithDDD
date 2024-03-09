@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPF.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF.App"
+        mc:Ignorable="d"
+        Title="FinPort" Height="800" Width="1200" WindowStartupLocation="CenterScreen" FontSize="28">
+    <Grid Background="Gray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Stretch" Background="WhiteSmoke">
+            <Button x:Name="createNote" Padding="20 10" Margin="20" Click="createNote_Click">Добавить операцию</Button>
+            <Button x:Name="createTransaction" Padding="20 10" Margin="20" Click="createTransaction_Click">Вид операции</Button>
+            <Button x:Name="createReport" Padding="20 10" Margin="20" Click="createReport_Click">Сохранить отчет как</Button>
+        </StackPanel>
+
+        <Frame x:Name="MainFrame" Grid.Row="1" Margin="50" Background="White"/>
+    </Grid>
+</Window>

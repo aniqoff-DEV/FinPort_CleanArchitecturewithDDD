@@ -1,0 +1,43 @@
+﻿<Page x:Class="WPF.App.Pages.NotePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF.App.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="Операция" FontSize="26">
+
+    <Grid Background="Wheat">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Label Margin="20" Padding="20 10">Выберите тип операции</Label>
+            <ComboBox Name="typeOfOperation" Margin="20" Padding="20 10" MinWidth="250"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Label Margin="20" Padding="20 10">Выберите вид транзакции</Label>
+            <ComboBox Name="transationType" Margin="20" Padding="20 10" MinWidth="250"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Label Margin="20" Padding="20 10">Описание</Label>
+            <TextBox x:Name="description" Margin="20" Padding="20 10" MinWidth="300"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Label Margin="20" Padding="20 10">Сумма операции</Label>
+            <TextBox x:Name="cost" Margin="20" Padding="20 10" Width="200"/>
+        </StackPanel>
+
+        <Button x:Name="createNote" Grid.Row="4" HorizontalAlignment="Center" Padding="60 15" Margin="10" Click="createNote_Click">Записать</Button>
+    </Grid>
+
+</Page>
